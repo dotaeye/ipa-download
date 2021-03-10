@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>下载</title>
+</head>
+
+<style>
+    .download {
+        padding: 10px;
+        display: block;
+        background-color: #ddd;
+    }
+</style>
+
+<body>
+    <div>
+        <script type="text/javascript">
+            const downloadUrl =
+                `itms-services://?action=download-manifest&url=${encodeURIComponent('https://raw.githubusercontent.com/dotaeye/ipa-download/master/app.plist')}`
+            document.write(`<a class='download' href="${downloadUrl}">下载</a>`)
+        </script>
+    </div>
+
+</body>
+
+</html>
